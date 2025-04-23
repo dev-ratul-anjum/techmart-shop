@@ -1,0 +1,79 @@
+.service-bar {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.service-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ff5722;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.service-content {
+  flex-grow: 1;
+}
+
+.service-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.service-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+} 

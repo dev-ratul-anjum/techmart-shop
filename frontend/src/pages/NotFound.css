@@ -1,0 +1,122 @@
+.not-found-page {
+    padding: 20px 0 40px;
+    background-color: #f5f5f5;
+    min-height: 60vh;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Breadcrumb Styles */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb a:hover {
+    color: #00b1cc;
+}
+
+.breadcrumb .separator {
+    margin: 0 10px;
+    color: #999;
+    font-size: 14px;
+}
+
+.breadcrumb .current {
+    color: #666;
+    font-weight: 400;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.page-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #00b1cc;
+}
+
+/* Not Found Content */
+.not-found-content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.not-found-message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.continue-button {
+    display: inline-block;
+    background-color: #00b1cc;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 40px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    text-transform: uppercase;
+}
+
+.continue-button:hover {
+    background-color: #009db7;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .not-found-content {
+        padding: 30px 20px;
+    }
+    
+    .page-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .not-found-content {
+        padding: 25px 15px;
+    }
+    
+    .page-title {
+        font-size: 22px;
+    }
+    
+    .continue-button {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+    }
+} 

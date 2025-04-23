@@ -1,0 +1,74 @@
+.moving-banner {
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.moving-text {
+  display: flex;
+  width: max-content;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  padding: 7px 0;
+}
+
+.text-content {
+  white-space: nowrap;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Animation speeds */
+.speed-slow {
+  animation-duration: 60s;
+}
+
+.speed-medium {
+  animation-duration: 30s;
+}
+
+.speed-fast {
+  animation-duration: 15s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .text-content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-content {
+    font-size: 12px;
+  }
+} 

@@ -1,0 +1,29 @@
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logo-image {
+    height: 25px;
+    width: auto;
+    display: block;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1440px) {
+    .logo-image {
+        height: 20px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .logo-image {
+        height: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-image {
+        height: 13px;
+    }
+} 

@@ -1,0 +1,263 @@
+.login-page-container {
+    width: 100%;
+    background-color: #f9f9f9;
+    min-height: 60vh;
+}
+
+/* Breadcrumb */
+.login-breadcrumb {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.login-breadcrumb ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+.login-breadcrumb li {
+    display: flex;
+    align-items: center;
+}
+
+.login-breadcrumb li:not(:first-child)::before {
+    content: '→';
+    margin: 0 8px;
+    color: #999;
+}
+
+.login-breadcrumb i.fa-home {
+    font-size: 16px;
+    color: #555;
+}
+
+.login-breadcrumb a {
+    color: #666;
+    text-decoration: none;
+}
+
+.login-breadcrumb a:hover {
+    color: #00BCD4;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Main content */
+.login-main-container {
+    padding: 30px 0 50px;
+}
+
+.login-title {
+    font-size: 22px;
+    color: #333;
+    margin: 0 0 15px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.login-divider {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 30px;
+    clear: both;
+}
+
+.login-content {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.login-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* New Customer */
+.new-customer,
+.returning-customer {
+    padding: 30px;
+}
+
+.new-customer h2,
+.returning-customer h2 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+    margin: 0 0 15px;
+    padding-bottom: 10px;
+}
+
+.new-customer h2::after,
+.returning-customer h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+
+.new-customer h2::before,
+.returning-customer h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #ff6b00;
+    z-index: 1;
+}
+
+.new-customer p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* Form styles */
+.login-form-group {
+    margin-bottom: 20px;
+}
+
+.login-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.login-form-group input::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+.login-form-group input:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.15);
+}
+
+.login-error {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+.common-error {
+    margin-top: 15px;
+}
+
+/* Forgot password link */
+.forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    color: #00BCD4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.login-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+    min-width: 120px;
+}
+
+.continue-btn {
+    background-color: #00BCD4;
+    color: white;
+    display: inline-block;
+}
+
+.login-submit-btn {
+    background-color: #00BCD4;
+    color: white;
+    display: inline-block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .login-columns {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .new-customer {
+        border-bottom: 1px solid #eee;
+    }
+    
+    .new-customer,
+    .returning-customer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-main-container {
+        padding: 20px 0 30px;
+    }
+    
+    .login-title {
+        font-size: 20px;
+    }
+    
+    .new-customer h2,
+    .returning-customer h2 {
+        font-size: 16px;
+    }
+    
+    .login-form-group input {
+        padding: 8px 10px;
+        height: 38px;
+    }
+    
+    .login-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
+
+/* Email and password inputs */
+#email, #password {
+    font-size: 14px;
+    color: #555;
+} 
