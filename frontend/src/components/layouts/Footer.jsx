@@ -108,8 +108,8 @@ const Footer = () => {
             </div>
             
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} TECH MART. All Rights Reserved.</p>
-                <p>Designed with <span className="heart">♥</span> by TechMart Team</p>
+                <p>&copy; {new Date().getFullYear()} <a href="https://www.techmart.com.bd/" target="_blank">TECH MART.</a>  All Rights Reserved.</p>
+                <p>Developed by <a href="https://www.techmart.com.bd/" target="_blank"> TechMart </a> </p>
             </div>
         </footer>
     );
