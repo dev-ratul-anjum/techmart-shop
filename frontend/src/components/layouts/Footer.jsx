@@ -108,8 +108,8 @@ const Footer = () => {
             </div>
             
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} <a href="https://www.techmart.com.bd/" target="_blank">TECH MART.</a>  All Rights Reserved.</p>
-                <p>Developed by <a href="https://www.techmart.com.bd/" target="_blank"> TechMart </a> </p>
+                <p>&copy; {new Date().getFullYear()} <a href="https://www.techmart.com.bd/" target="_blank">Tech Mart.</a>  All Rights Reserved.</p>
+                <p>Developed by <a href="https://www.techmart.com.bd/" target="_blank"> Tech Mart </a> </p>
             </div>
         </footer>
     );
